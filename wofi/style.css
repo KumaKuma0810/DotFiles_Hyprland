@@ -1,0 +1,115 @@
+@import url('/home/.cache/wal/colors-waybar.css');
+@define-color foreground #cdc6c0;
+@define-color background #0a0b0f;
+@define-color cursor #cdc6c0;
+
+@define-color color0 #0a0b0f;
+@define-color color1 #354752;
+@define-color color2 #5B6162;
+@define-color color3 #7C7C77;
+@define-color color4 #948878;
+@define-color color5 #7C8284;
+@define-color color6 #8F8C88;
+@define-color color7 #cdc6c0;
+@define-color color8 #8f8a86;
+@define-color color9 #354752;
+@define-color color10 #5B6162;
+@define-color color11 #7C7C77;
+@define-color color12 #948878;
+@define-color color13 #7C8284;
+@define-color color14 #8F8C88;
+@define-color color15 #cdc6c0;
+
+
+
+* {
+    all:unset;
+    font-family: 'Fira Code', monospace;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    text-shadow:none;
+    background-color:transparent;
+}
+
+window {
+    all:unset;
+    padding: 20px;
+    border-radius: 0px;
+    background-color: alpha(@background,0.9);
+}
+#inner-box {
+    margin: 2px;
+    padding: 5px
+    border: none;
+}
+#outer-box {    
+    border: none;
+}
+#scroll {
+    margin: 0px;
+    padding: 30px;
+    border: none;
+}
+#input {
+    all:unset;
+    margin-left:20px;
+    margin-right:20px;
+    margin-top:20px;
+    padding: 20px;
+    border: none;
+    outline: none;
+    color: @text;
+    box-shadow: 1px 1px 5px rgba(0,0,0, .5);
+    border-radius:5;
+    background-color: alpha(@background,.2);
+}
+#input image {
+    border: none;
+    color: @red;
+    padding-right:10px;
+}
+#input * {
+    border: none;
+    outline: none;
+}
+
+#input:focus {
+    outline: none;
+    border: none;
+    background: alpha(@background,1);
+    border-radius:5;
+}
+#text {
+    margin: 5px;
+    border: none;
+    color: @text;
+    outline: none;
+}
+#text {
+    margin: 5px;
+    border: none;
+    color: @text;
+    outline: none;
+}
+#entry {
+    border: none;
+    margin: 5px;
+    padding: 10px;
+}
+#entry arrow {
+    border: none;
+    color: @lavender;
+
+}
+#entry:selected {
+    border: none;
+    border-radius: 5px;
+    background-color: @color11;
+}
+#entry:selected #text {
+    color: @color9;
+}
+#entry:drop(active) {
+    background-color: @lavender !important;
+}

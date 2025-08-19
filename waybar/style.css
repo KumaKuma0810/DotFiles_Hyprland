@@ -1,152 +1,130 @@
-@import url('../../.cache/wal/colors-waybar.css');
-
 * {
-    font-size:15px;
-    font-family: "Fira Code";
-}
-window#waybar{
-    all:unset;
-}
-.modules-left {
-    padding:7px;
-    margin:5 0 5 5;
-    border-radius:10px;
-    background: alpha(@background,.6);
-    box-shadow: 0px 0px 2px rgba(0, 0, 0, .6);
-}
-.modules-center {
-    padding:7px;
-    margin:5 0 5 0;
-    border-radius:10px;
-    background: alpha(@background,.6);
-    box-shadow: 0px 0px 2px rgba(0, 0, 0, .6);
-}
-.modules-right {
-    padding:7px;
-    margin: 5px 5px 5px 0px;
-    border-radius:10px;
-    background: alpha(@background,.6);
-    box-shadow: 0px 0px 2px rgba(0, 0, 0, .6);
-}
-tooltip {
-    background:@background;
-    color: @color7;
-}
-#clock:hover, #custom-pacman:hover, #custom-notification:hover,#bluetooth:hover,#network:hover,#battery:hover, #cpu:hover,#memory:hover,#temperature:hover{
-    transition: all .3s ease;
-    color:@color9;
-}
-#clock{
-    padding: 0px 5px;
-    color:@color7;
-    transition: all .3s ease;
-}
-#custom-pacman{
-    padding: 0px 5px;
-    transition: all .3s ease;
-    color:@color7;
-
-}
-#workspaces {
-    padding: 0px 5px;
-}
-#workspaces button {
-    all:unset;
-    padding: 0px 5px;
-    color: alpha(@color9,.4);
-    transition: all .2s ease;
-}
-#workspaces button:hover {
-    color:rgba(0,0,0,0);
+    font-family: JetBrainsMonoNL Nerd Font Propo, JetBrainsMonoNL Nerd Font Propo, FontAwesome,  sans-serif;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
     border: none;
-    text-shadow: 0px 0px 1.5px rgba(0, 0, 0, .5);
-    transition: all 1s ease;
-}
-#workspaces button.active {
-    color: @color9;
-    border: none;
-    text-shadow: 0px 0px 2px rgba(0, 0, 0, .5);
-}
-#workspaces button.empty {
-    color: rgba(0,0,0,0);
-    border: none;
-    text-shadow: 0px 0px 1.5px rgba(0, 0, 0, .2);
-}
-#workspaces button.empty:hover {
-    color: rgba(0,0,0,0);
-    border: none;
-    text-shadow: 0px 0px 1.5px rgba(0, 0, 0, .5);
-    transition: all 1s ease;
-}
-#workspaces button.empty.active {
-    color: @color9;
-    border: none;
-    text-shadow: 0px 0px 2px rgba(0, 0, 0, .5);
-}
-#bluetooth{
-    padding: 0px 5px;
-    transition: all .3s ease;
-    color:@color7;
-
-}
-#network{
-    padding: 0px 17px 0px 9px;
-    transition: all .3s ease;
-    color:@color7;
-
-}
-#battery{
-    padding: 0px 5px;
-    transition: all .3s ease;
-    color:@color7;
-
-
-}
-#battery.charging {
-    color: #26A65B;
+    border-radius: 0;
+    box-shadow: none;
+    text-shadow: none;
 }
 
-#battery.warning:not(.charging) {
-    color: #ffbe61;
+window#waybar {
+    background-color: rgba(43, 44, 52, 0.8);
+    color: #ffffff;
+    transition: background-color 0.5s;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+#window {
+    font-family: 'JetBrainsMonoNL Nerd Font Propo,', sans-serif;
+}
+
+#clock {
+    min-width: 140px;
+    color: #ffffff;
+    padding: 0px 10px;
+    border-radius: 4px;
+}
+
+
+#battery,
+#cpu,
+#memory,
+#backlight,
+#network,
+#pulseaudio,
+#tray,
+#mode,
+#idle_inhibitor,
+#keyboard-state,
+#scratchpad {
+    padding: 5px 8px;
+    color: #ffffff;
+}
+
+#battery.charging{
+    background-color: #b5b4e2;
 }
 
 #battery.critical:not(.charging) {
-    color: #f53c3c;
-    animation-name: blink;
-    animation-duration: 0.5s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-}
-#group-expand{
-    padding: 0px 5px;
-    transition: all .3s ease; 
-}
-#custom-expand{
-    padding: 0px 5px;
-    color:alpha(@foreground,.2);
-    text-shadow: 0px 0px 2px rgba(0, 0, 0, .7);
-    transition: all .3s ease; 
-}
-#custom-expand:hover{
-    color:rgba(255,255,255,.2);
-    text-shadow: 0px 0px 2px rgba(255, 255, 255, .5);
-}
-#custom-colorpicker{
-    padding: 0px 5px;
+    background-color: #b54f4f;
+    animation: blink 0.5s linear infinite alternate;
 }
 
-#tray{
-    padding: 0px 5px;
-    transition: all .3s ease; 
-
-}
-#tray menu * {
-    padding: 0px 5px;
-    transition: all .3s ease; 
+@keyframes blink {
+    to {
+        background-color: #ffffff;
+        color: #3b3f51;
+    }
 }
 
-#tray menu separator {
-    padding: 0px 5px;
-    transition: all .3s ease; 
+#network.disconnected {
+    background-color: #b54f4f;
+}
+
+#pulseaudio.muted {
+    background-color: #3b3f51;
+    color: #b5b4e2;
+}
+
+#tray {
+    color: #282a36;
+}
+
+#tray>.passive {
+    -gtk-icon-effect: dim;
+    color: #6272a4;
+}
+
+#tray>.needs-attention {
+    background-color: #ff5555;
+    color: #ffffff;
+}
+#workspaces button,
+#mode {
+    padding: 5px 8px;
+    background-color: transparent;
+    color: #ffffff;
+}
+
+/* Контейнер блока рабочих столов */
+#workspaces {
+  margin: 0 8px;
+}
+
+/* Кнопки рабочих столов */
+
+/* Активный стол */
+#workspaces button.active {
+  background: @theme_selected_bg_color;
+  color: @theme_selected_fg_color;
+}
+
+/* Уведомление/urgent */
+#workspaces button.urgent {
+  background: #d70022;
+  color: #ffffff;
+}
+
+/* Неактивные — слегка приглушённые */
+#workspaces button:not(.active):not(.urgent) {
+  opacity: 0.3;
+}
+
+/* Ховер */
+#workspaces button:hover {
+  opacity: 6.0;
+}
+
+#workspaces button.active {
+  background: #354752;
+  color: #ffffff;
+}
+
+label:focus {
+    background-color: #000000;
 }

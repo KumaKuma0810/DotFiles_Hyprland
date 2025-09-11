@@ -1,0 +1,41 @@
+#!/usr/bin/env bash
+
+# Проверяем, есть ли активное соединение
+status=$(nmcli -t -f TYPE,DEVICE connection show --active)
+
+if [[ -z "$status" ]]; then
+    echo "󰖪  No net"
+    exit 0
+fi
+
+# Проверяем Wi-Fi
+wifi=$(nmcli -t -f ACTIVE,SSID,SIGNAL dev wifi | grep '^yes')
+if [[ -n "$wifi" ]]; then
+    ssid=$(echo "$wifi" | cut -d: -f2)
+    signal=$(echo "$wifi" | cut -d: -f3)
+
+    if (( signal > 75 )); then
+        icon="󰤨"   # сильный сигнал
+    elif (( signal > 50 )); then
+        icon="󰤥"   # средний
+    elif (( signal > 25 )); then
+        icon="󰤢"   # слабый
+    else
+        icon="󰤟"   # очень слабый
+    fi
+
+    echo "$icon  $ssid"
+    exit 0
+fi
+
+# Проверяем Ethernet
+eth=$(echo "$status" | grep ":ethernet:")
+if [[ -n "$eth" ]]; then
+    echo "󰈀  Wired"
+    exit 0
+fi
+
+# Если что-то другое
+dev=$(echo "$status" | cut -d: -f3)
+echo "󰖩 "
+

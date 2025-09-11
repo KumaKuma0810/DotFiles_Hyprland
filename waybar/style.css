@@ -67,7 +67,6 @@ window#waybar.hidden {
 }
 
 #pulseaudio.muted {
-    background-color: #3b3f51;
     color: #b5b4e2;
 }
 
@@ -121,7 +120,7 @@ window#waybar.hidden {
 }
 
 #workspaces button.active {
-  background: #354752;
+  background: #931226;
   color: #ffffff;
 }
 

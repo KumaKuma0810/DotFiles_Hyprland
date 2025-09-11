@@ -1,0 +1,34 @@
+#!/bin/bash
+
+# Путь к информации о батарее
+BAT_PATH="/sys/class/power_supply/BAT0"
+
+if [ ! -d "$BAT_PATH" ]; then
+    echo "Батарея не найдена!"
+    exit 1
+fi
+
+# Чтение состояния батареи
+capacity=$(cat "$BAT_PATH/capacity")
+status=$(cat "$BAT_PATH/status")
+
+# Выбор иконки по уровню заряда
+if [ "$status" = "Charging" ]; then
+    icon=""
+elif [ "$capacity" -ge 90 ]; then
+    icon=""  # почти полный
+elif [ "$capacity" -ge 70 ]; then
+    icon=""
+elif [ "$capacity" -ge 50 ]; then
+    icon=""
+elif [ "$capacity" -ge 20 ]; then
+    icon=""
+else
+    icon=""
+fi
+
+
+
+# Вывод состояния батареи с иконкой
+echo -e "$icon $capacity% "
+

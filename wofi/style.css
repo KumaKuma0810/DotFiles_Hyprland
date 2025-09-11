@@ -44,7 +44,7 @@ window {
     border: none;
 }
 #outer-box {    
-    border: none;
+    border: 8px solid #5b1c1c;
 }
 #scroll {
     margin: 0px;

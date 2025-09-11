@@ -1,0 +1,14 @@
+add /home/kuma/Music/
+show-hooks
+set shuffle=true
+add /home/kuma/Music
+clear
+q
+add /home/kuma
+add \home\kuma\Music
+shuffle
+load ~/Music/
+add ~/Music/
+add ~/Music
+sp ~/music
+sp ~/Music

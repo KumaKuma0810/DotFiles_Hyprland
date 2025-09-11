@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+# Получаем название активной раскладки
+layout=$(hyprctl devices -j | jq -r '.keyboards[] | select(.main).active_keymap')
+
+# Приводим к верхнему регистру и берём только первые 2 буквы
+short=$(echo "$layout" | awk '{print toupper(substr($1,1,2))}')
+
+# Выводим с иконкой
+echo " $short"

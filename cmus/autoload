@@ -1,0 +1,5 @@
+add-hook -a player_stop "~/.config/dunst/scripts/notify_cmus.sh"
+add-hook -a player_play "~/.config/dunst/scripts/notify_cmus.sh"
+add-hook -a playlist_change "~/.config/dunst/scripts/notify_cmus.sh"
+
+

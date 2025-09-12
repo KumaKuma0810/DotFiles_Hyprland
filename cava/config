@@ -1,35 +1,41 @@
-# ~/.config/cava/config
-
-[input]
-method = pulse
-source = auto
-
-[output]
-method = ncurses
-
 [general]
-bars = 48
+bars = 50
 framerate = 60
 autosens = 1
+sensitivity = 100
 lower_cutoff_freq = 50
 upper_cutoff_freq = 12000
 
-[smoothing]
-monstercat = 1
-waves = 0
-gravity = 45
-integral = 85
+[output]
+method = ncurses
+truecolor = true
 
 [color]
 background = '#000000'
-foreground = '#eaeaea'
+foreground = '#bfbfec'
+cursor = '#bfbfec'
 
+# Градиент по твоей палитре:
 gradient = 1
-gradient_count = 6
-gradient_color_1 = '#C59191'
-gradient_color_2 = '#CBA09F'
-gradient_color_3 = '#D1B0B0'
-gradient_color_4 = '#D7C0BF'
-gradient_color_5 = '#DCCBCB'
-gradient_color_6 = '#E2DBDB'
+gradient_count = 7
+gradient_color_1 = '#BA6DD0'  ; фиолетовый
+gradient_color_2 = '#2293C3'  ; бирюзовый
+gradient_color_3 = '#5695EA'  ; небесный
+gradient_color_4 = '#7290ED'  ; голубой
+gradient_color_5 = '#CD96BA'  ; розово-сиреневый
+gradient_color_6 = '#FAA3A2'  ; персиковый
+gradient_color_7 = '#bfbfec'  ; светлый завершающий
+
+[smoothing]
+integral = 77
+monstercat = 1
+waves = 0
+
+[eq]
+1 = 2
+2 = 2
+3 = 2
+4 = 2
+5 = 2
+6 = 2
 

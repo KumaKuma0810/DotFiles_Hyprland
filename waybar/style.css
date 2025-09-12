@@ -1,6 +1,6 @@
 * {
     font-family: JetBrainsMonoNL Nerd Font Propo, JetBrainsMonoNL Nerd Font Propo, FontAwesome,  sans-serif;
-    font-size: 14px;
+    font-size: 13px;
     margin: 0;
     padding: 0;
     border: none;
@@ -120,7 +120,7 @@ window#waybar.hidden {
 }
 
 #workspaces button.active {
-  background: #931226;
+  background: #8585a5;
   color: #ffffff;
 }
 

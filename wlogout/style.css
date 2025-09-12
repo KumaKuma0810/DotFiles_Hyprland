@@ -12,7 +12,7 @@ button {
     border-color: #FFF;
     text-decoration-color: #FFFFFF;
     color: #FFFFFF;
-    background-color: rgba(91,28,28, 0.8); /* полупрозрачные кнопки */
+    background-color: #7290ED; /* полупрозрачные кнопки */
     border-style: solid;
     border-width: 1px;
     background-repeat: no-repeat;
@@ -21,7 +21,7 @@ button {
 }
 
 button:focus, button:active, button:hover {
-    background-color: rgba(10, 11, 15, 0.8); /* при наведении — тёмный полупрозрачный */
+    background-color: #8585a5; /* при наведении — тёмный полупрозрачный */
     outline-style: none;
 }
 

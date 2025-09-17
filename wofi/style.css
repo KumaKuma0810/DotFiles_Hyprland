@@ -1,25 +1,3 @@
-@define-color foreground #cdc6c0;
-@define-color background #0a0b0f;
-@define-color cursor #cdc6c0;
-
-@define-color color0 #0a0b0f;
-@define-color color1 #354752;
-@define-color color2 #5B6162;
-@define-color color3 #7C7C77;
-@define-color color4 #948878;
-@define-color color5 #7C8284;
-@define-color color6 #8F8C88;
-@define-color color7 #cdc6c0;
-@define-color color8 #8f8a86;
-@define-color color9 #354752;
-@define-color color10 #5B6162;
-@define-color color11 #7C7C77;
-@define-color color12 #948878;
-@define-color color13 #7C8284;
-@define-color color14 #8F8C88;
-@define-color color15 #cdc6c0;
-
-
 
 * {
     all:unset;
@@ -35,7 +13,7 @@ window {
     all:unset;
     padding: 20px;
     border-radius: 0px;
-    background-color: alpha(@background,0.9);
+    background-color: #5695EA;
 }
 #inner-box {
     margin: 2px;
@@ -61,7 +39,6 @@ window {
     color: @text;
     box-shadow: 1px 1px 5px rgba(0,0,0, .5);
     border-radius:5;
-    background-color: alpha(@background,.2);
 }
 #input image {
     border: none;
@@ -76,7 +53,7 @@ window {
 #input:focus {
     outline: none;
     border: none;
-    background: alpha(@background,1);
+    background: #CD96BA;
     border-radius:5;
 }
 #text {
@@ -104,10 +81,10 @@ window {
 #entry:selected {
     border: none;
     border-radius: 5px;
-    background-color: @color11;
+    background-color: #2293C3;
 }
 #entry:selected #text {
-    color: @color9;
+    color: #FFF;
 }
 #entry:drop(active) {
     background-color: @lavender !important;

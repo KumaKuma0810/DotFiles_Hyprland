@@ -18,7 +18,10 @@ vim.opt.termguicolors = true
 vim.opt.cursorline = true
 vim.opt.signcolumn = "yes"
 vim.opt.completeopt = "menu,menuone,noselect"
-
+vim.o.wrap = true
+vim.o.linebreak = true
+vim.o.breakindent = true
+vim.o.showbreak = "↳ "
 -- ================================
 -- 2. Установка lazy.nvim
 -- ================================

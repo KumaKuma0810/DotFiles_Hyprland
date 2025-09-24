@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Startpage</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    :root {
+      --background: #615921;
+      --foreground: #cdc6c0;
+      --cursor: #7C8284;
+      --color-accent: #615921;
+      --color-header: #b3acd9;
+      --color-hover: #b3acd9;
+      --color-subtle: #d7d7d6;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      font-family: 'GeistMono Nerd Font', sans-serif;
+      background: var(--background);
+      color: var(--foreground);
+      overflow: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle, #ffffff0d 1px, transparent 1px);
+      background-size: 80px 80px;
+      animation: floatGrid 40s linear infinite;
+      z-index: -1;
+      opacity: 0.04;
+    }
+
+    @keyframes floatGrid {
+      0% { background-position: 0 0; }
+      100% { background-position: 1000px 1000px; }
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      padding: 20px;
+      min-width: 320px; /* Минимальная ширина для контейнера */
+    }
+
+    .card {
+      background: rgba(1, 7, 16, 0.9);
+      display: flex;
+      flex-direction: row;
+      border-radius: 5px;
+      overflow: hidden;
+      max-width:  1200px;
+      width: 100%;
+      box-shadow: 0 0 100px rgba(100, 151, 216, 0.1);
+      min-width: 320px; /* Минимальная ширина для карточки */
+    }
+
+    .text {
+      padding: 40px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    h1 {
+      color: var(--foreground);
+    }
+
+    .accent {
+      color: var(--color-accent);
+      letter-spacing: 0.05em;
+    }
+
+    .columns {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+
+    .columns div {
+      min-width: 140px;
+      text-align: left;
+    }
+
+    h3 {
+      font-weight: 700;
+      font-size: 18px;
+	  margin-bottom: 35px;
+      color: var(--color-header);
+    }
+
+    a {
+      display: block;
+      text-decoration: none;
+      color: var(--color-subtle);
+      font-size: 17px;
+	    margin-bottom: 8px;
+      transition: color 0.2s;
+    }
+
+    a:hover {
+      color: var(--color-hover);
+    }
+
+    .footer {
+      margin-top: 40px;
+      font-size: 0.8rem;
+      color: #9099a8;
+    }
+
+    .image {
+      flex-shrink: 0;
+    }
+
+    .image img {
+      display: block;
+      height: 100%;
+      max-height:722px;
+    }
+
+    /* Для экранов с шириной от 800px и выше */
+    @media (max-width: 800px) {
+      .card {
+        flex-direction: row; /* Горизонтальное расположение карточки */
+      }
+
+      .image img {
+        max-height: 890px;
+        object-fit: cover;
+      }
+
+      .columns {
+        flex-direction: row; /* Горизонтальные колонки */
+      }
+      h1 {
+      	margin: 0px;
+      }
+    }
+
+    /* Для экранов с шириной от 320px до 799px */
+   
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="text">
+        <h1>Hi, <span class="accent">KUMA</span></h1>
+        <div class="columns">
+          <div>
+            <h3>| Social |</h3>
+            <a href="https://dtf.ru/" target="blank" >DTF</a>
+            <a href="https://youtube.com/" target="blank">YouTube</a>
+            <a href="https://www.reddit.com/" target="blank">Reddit</a>
+            <a href="https://joyreactor.cc/all" target="blank">JoyREACTOR</a>
+            <a href="https://www.pixiv.net/en/" target="blank">Pixiv</a>
+            <a href="https://web.telegram.org/" target="blank">Telegram web</a>
+          </div>
+          <div>
+            <h3>| Anime |</h3>
+            <a href="https://shikimori.one/" target="blank">Shikimory</a>
+            <a href="https://t.readmanga.io/" target="blank">Mangaread</a>
+            <a href="https://site.yummyani.me/index.php" target="blank">Yummyani</a>
+            <a href="https://24.findanime.me/" target="blank">Findanime</a>
+	          <a href="https://reyohoho.github.io/reyohoho/" target="blank">Reyohoho</a>
+          </div>
+          <div>
+            <h3>| Misc |</h3>
+            <a href="https://grok.com/" target="blank">GROK</a>
+            <a href="https://chatgpt.com/" target="blank"> ChatGPT</a>
+            <a href="https://github.com/KumaKuma0810/" target="blank">Github</a>
+            <a href="https://gmail.com/" target="blank">Gmail</a>
+          </div>
+          <div>
+            <h3>| Prog |</h3>
+            <a href="https://django.fun/docs/" target="blank">Django fun</a>
+            <a href="https://metanit.com/" target="blank">Metanit</a>
+	    <a href="https://itsecforu.ru/" target="blank">ITSecforu</a>
+          </div>
+        </div>
+        <div class="footer">
+          <p id="datetime"></p>
+        </div>
+      </div>
+      <div class="image">
+        <img src="/home/kuma/startPage/e552b04ecb186884e3c96723eba36b12.jpg" alt="Pixel Art">
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function updateDateTime() {
+      const now = new Date();
+      const options = {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+        hour: 'numeric',
+        minute: 'numeric',
+        second: 'numeric',
+        weekday: 'long'
+      };
+      const formattedDate = now.toLocaleString('en-US', options);
+      document.getElementById('datetime').innerText = formattedDate;
+    }
+
+    // Обновляем дату и время каждую секунду
+    setInterval(updateDateTime, 1000);
+    // Инициализация при загрузке страницы
+    updateDateTime();
+  </script>
+</body>
+</html>
+

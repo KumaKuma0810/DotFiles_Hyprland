@@ -1,0 +1,10 @@
+* {
+    background:       #010710;    /* --background */
+    background-alt:   #1C6AAF;    /* насыщенный акцент */
+    foreground:       #cedbf0;    /* основной текст */
+    selected:         #6497D8;    /* выбор */
+    active:           #3179C2;    /* активный */
+    urgent:           #899EB9;    /* тревожный */
+    border-color:     #4183C7;    /* декоративная рамка */
+    separatorcolor:   #91B4E8;    /* разделитель */
+}

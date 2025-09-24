@@ -1,0 +1,55 @@
+2025-09-02 17:24:00.307 [info] Telemetry level is off
+2025-09-02 17:24:00.307 [info] Experiments are disabled, only manually opted experiments are active.
+2025-09-02 17:24:00.307 [warning] Dir "/home/kuma/financeAPI/.pixi/envs" is not watchable (directory does not exist)
+2025-09-02 17:24:00.307 [info] Starting Environment refresh
+2025-09-02 17:24:00.307 [info] Searching for interpreters in posix paths locator
+2025-09-02 17:24:00.307 [info] Searching for pyenv environments
+2025-09-02 17:24:00.307 [info] Searching for conda environments
+2025-09-02 17:24:00.307 [info] Searching for global virtual environments
+2025-09-02 17:24:00.307 [info] Searching for custom virtual environments
+2025-09-02 17:24:00.307 [info] pyenv is not installed
+2025-09-02 17:24:00.307 [info] Finished searching for pyenv environments: 22 milliseconds
+2025-09-02 17:24:00.307 [info] Finished searching for custom virtual envs: 20 milliseconds
+2025-09-02 17:24:00.307 [info] > conda info --json
+2025-09-02 17:24:00.307 [info] > hatch env show --json
+2025-09-02 17:24:00.307 [info] cwd: .
+2025-09-02 17:24:00.307 [info] > pyenv which python
+2025-09-02 17:24:00.307 [info] cwd: .
+2025-09-02 17:24:00.307 [info] Finished searching for global virtual envs: 55 milliseconds
+2025-09-02 17:24:00.423 [info] Found: /bin/python --> /bin/python3.13
+2025-09-02 17:24:00.427 [info] Found: /bin/python3 --> /bin/python3.13
+2025-09-02 17:24:00.428 [info] Found: /bin/python3.13 --> /bin/python3.13
+2025-09-02 17:24:00.489 [info] > ./env/bin/python -I ~/.vscode-oss/extensions/ms-python.python-2025.4.0-universal/python_files/get_output_via_markers.py ~/.vscode-oss/extensions/ms-python.python-2025.4.0-universal/python_files/interpreterInfo.py
+2025-09-02 17:24:00.510 [info] Found: /sbin/python --> /sbin/python3.13
+2025-09-02 17:24:00.511 [info] Found: /sbin/python3 --> /sbin/python3.13
+2025-09-02 17:24:00.511 [info] Found: /sbin/python3.13 --> /sbin/python3.13
+2025-09-02 17:24:00.529 [info] Found: /usr/bin/python --> /usr/bin/python3.13
+2025-09-02 17:24:00.530 [info] Found: /usr/bin/python3 --> /usr/bin/python3.13
+2025-09-02 17:24:00.532 [info] Found: /usr/bin/python3.13 --> /usr/bin/python3.13
+2025-09-02 17:24:00.640 [info] Found: /usr/sbin/python --> /usr/sbin/python3.13
+2025-09-02 17:24:00.652 [info] Found: /usr/sbin/python3 --> /usr/sbin/python3.13
+2025-09-02 17:24:00.652 [info] Found: /usr/sbin/python3.13 --> /usr/sbin/python3.13
+2025-09-02 17:24:00.670 [info] > /bin/python -I ~/.vscode-oss/extensions/ms-python.python-2025.4.0-universal/python_files/get_output_via_markers.py ~/.vscode-oss/extensions/ms-python.python-2025.4.0-universal/python_files/interpreterInfo.py
+2025-09-02 17:24:00.692 [info] > /sbin/python -I ~/.vscode-oss/extensions/ms-python.python-2025.4.0-universal/python_files/get_output_via_markers.py ~/.vscode-oss/extensions/ms-python.python-2025.4.0-universal/python_files/interpreterInfo.py
+2025-09-02 17:24:00.704 [info] Finished searching for interpreters in posix paths locator: 468 milliseconds
+2025-09-02 17:24:00.721 [info] Environments refresh paths discovered (event): 486 milliseconds
+2025-09-02 17:24:00.721 [info] Environments refresh paths discovered: 486 milliseconds
+2025-09-02 17:24:00.764 [info] > /usr/bin/python -I ~/.vscode-oss/extensions/ms-python.python-2025.4.0-universal/python_files/get_output_via_markers.py ~/.vscode-oss/extensions/ms-python.python-2025.4.0-universal/python_files/interpreterInfo.py
+2025-09-02 17:24:00.785 [info] > /usr/sbin/python -I ~/.vscode-oss/extensions/ms-python.python-2025.4.0-universal/python_files/get_output_via_markers.py ~/.vscode-oss/extensions/ms-python.python-2025.4.0-universal/python_files/interpreterInfo.py
+2025-09-02 17:24:00.851 [info] Environments refresh finished (event): 616 milliseconds
+2025-09-02 17:24:00.863 [info] Environment refresh took 628 milliseconds
+2025-09-02 17:24:00.868 [info] Python interpreter path: ./env/bin/python
+2025-09-02 17:24:02.248 [info] Starting Jedi language server for financeAPI.
+2025-09-02 17:24:16.860 [info] Discover tests for workspace name: undefined - uri: /home/kuma/.config/VSCodium/User/settings.json
+2025-09-02 17:24:36.635 [info] Send text to terminal: source /home/kuma/financeAPI/env/bin/activate
+2025-09-02 17:26:43.585 [info] Discover tests for workspace name: undefined - uri: /home/kuma/.config/VSCodium/User/settings.json
+2025-09-02 17:28:10.768 [info] Discover tests for workspace name: financeAPI - uri: /home/kuma/financeAPI/financeAPI/categories/views.py
+2025-09-02 17:28:14.283 [info] Discover tests for workspace name: financeAPI - uri: /home/kuma/financeAPI/financeAPI/financeAPI/urls.py
+2025-09-02 17:29:39.098 [info] Discover tests for workspace name: financeAPI - uri: /home/kuma/financeAPI/financeAPI/categories/views.py
+2025-09-02 17:30:05.901 [info] Discover tests for workspace name: financeAPI - uri: /home/kuma/financeAPI/financeAPI/categories/views.py
+2025-09-02 17:30:19.614 [info] Discover tests for workspace name: financeAPI - uri: /home/kuma/financeAPI/financeAPI/categories/views.py
+2025-09-02 17:30:40.348 [info] Discover tests for workspace name: financeAPI - uri: /home/kuma/financeAPI/financeAPI/categories/views.py
+2025-09-02 17:31:44.502 [info] Discover tests for workspace name: undefined - uri: /home/kuma/.config/VSCodium/User/settings.json
+2025-09-02 17:32:15.472 [info] Discover tests for workspace name: undefined - uri: /home/kuma/.config/VSCodium/User/settings.json
+2025-09-02 17:33:03.416 [info] Discover tests for workspace name: undefined - uri: /home/kuma/.config/VSCodium/User/settings.json
+2025-09-02 17:33:21.884 [info] Discover tests for workspace name: undefined - uri: /home/kuma/.config/VSCodium/User/settings.json

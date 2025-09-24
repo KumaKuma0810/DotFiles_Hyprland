@@ -1,0 +1,22 @@
+00:00:00.533258 VirtualBox GUI VM Selector Window 7.1.12 r169651 linux.amd64 (Jul 15 2025 20:14:26) release log
+00:00:00.533260 Log opened 2025-08-13T14:27:11.382627000Z
+00:00:00.533261 Build Type: release
+00:00:00.533264 OS Product: Linux
+00:00:00.533266 OS Release: 6.14.11-hardened1-1-hardened
+00:00:00.533268 OS Version: #1 SMP PREEMPT_DYNAMIC Thu, 19 Jun 2025 21:59:45 +0000
+00:00:00.533297 DMI Product Name: HP ProBook 440 G4
+00:00:00.533311 DMI Product Version: 
+00:00:00.533316 Firmware type: UEFI
+00:00:00.533883 Secure Boot: Disabled
+00:00:00.533930 Host RAM: 7829MB (7.6GB) total, 7456MB (7.2GB) available
+00:00:00.533934 Executable: /usr/lib/virtualbox/VirtualBox
+00:00:00.533934 Process ID: 1709
+00:00:00.533935 Package type: LINUX_64BITS_GENERIC (OSE)
+00:00:00.533977 Qt version: 6.9.1
+00:00:00.535888 GUI: UIMediumEnumerator: Initial medium-enumeration finished!
+00:00:00.547970 GUI: UIMediumEnumerator: Medium-enumeration started...
+00:00:01.303651 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:00:05.353220 GUI: UIInvisibleWindow::sltFallback: Move event missing. Screen: 0, work area: 959x539 x 800x800
+00:00:05.353277 GUI: UIDesktopWidgetWatchdog::sltHandleHostScreenAvailableGeometryCalculated: Screen 0 work area is actually resized to: 959x539 x 800x800
+00:09:27.163560 GUI: UICommon: Handling aboutToQuit request..
+00:09:27.905983 GUI: UICommon: aboutToQuit request handled!

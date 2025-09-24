@@ -1,5 +1,5 @@
 * {
-    font-family: JetBrainsMonoNL Nerd Font Propo, JetBrainsMonoNL Nerd Font Propo, FontAwesome,  sans-serif;
+    font-family: GeistMono Nerd Font,  sans-serif;
     font-size: 13px;
     margin: 0;
     padding: 0;
@@ -10,7 +10,7 @@
 }
 
 window#waybar {
-    background-color: rgba(43, 44, 52, 0.8);
+    background-color: rgba(16, 14, 3, 0.6);
     color: #ffffff;
     transition: background-color 0.5s;
 }
@@ -99,13 +99,13 @@ window#waybar.hidden {
 
 /* Активный стол */
 #workspaces button.active {
-  background: @theme_selected_bg_color;
+  background: #364653;
   color: @theme_selected_fg_color;
 }
 
 /* Уведомление/urgent */
 #workspaces button.urgent {
-  background: #d70022;
+  background: #4E5C68;
   color: #ffffff;
 }
 
@@ -120,7 +120,7 @@ window#waybar.hidden {
 }
 
 #workspaces button.active {
-  background: #8585a5;
+  background: #8A7748;
   color: #ffffff;
 }
 

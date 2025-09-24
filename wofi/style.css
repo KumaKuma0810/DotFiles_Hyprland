@@ -13,7 +13,7 @@ window {
     all:unset;
     padding: 20px;
     border-radius: 0px;
-    background-color: #5695EA;
+    background-color: #100e03;
 }
 #inner-box {
     margin: 2px;
@@ -21,7 +21,7 @@ window {
     border: none;
 }
 #outer-box {    
-    border: 8px solid #2293C3;
+    border: 8px solid #615921;
 }
 #scroll {
     margin: 0px;
@@ -53,7 +53,7 @@ window {
 #input:focus {
     outline: none;
     border: none;
-    background: #CD96BA;
+    background: #8A7748;
     border-radius:5;
 }
 #text {
@@ -81,7 +81,7 @@ window {
 #entry:selected {
     border: none;
     border-radius: 5px;
-    background-color: #2293C3;
+    background-color: #646155;
 }
 #entry:selected #text {
     color: #FFF;

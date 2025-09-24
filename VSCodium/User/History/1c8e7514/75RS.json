@@ -1,0 +1,6 @@
+{
+    "editor.fontFamily": "GeistMono Nerd Font, 'monospace', monospace",
+    "editor.stickyScroll.enabled": false,
+    "terminal.integrated.fontLigatures.enabled": true,
+    "workbench.colorTheme": "Owlet (Charcoal)"
+}

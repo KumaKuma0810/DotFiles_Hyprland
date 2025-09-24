@@ -8,20 +8,18 @@ window {
 }
 
 button {
-    border-radius: 5;
+    border-radius:2;
     border-color: #FFF;
     text-decoration-color: #FFFFFF;
     color: #FFFFFF;
-    background-color: #7290ED; /* полупрозрачные кнопки */
-    border-style: solid;
-    border-width: 1px;
+    background-color:#364653; 
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 25%;
+    background-size: 10%;
 }
 
 button:focus, button:active, button:hover {
-    background-color: #8585a5; /* при наведении — тёмный полупрозрачный */
+    background-color: #36556B; /* при наведении — тёмный полупрозрачный */
     outline-style: none;
 }
 

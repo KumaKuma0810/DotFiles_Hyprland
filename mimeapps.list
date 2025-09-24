@@ -1,0 +1,11 @@
+[Default Applications]
+image/jpeg=org.xfce.ristretto.desktop
+image/png=org.xfce.ristretto.desktop
+text/plain=nvim.desktop
+image/x-tga=org.xfce.ristretto.desktop
+
+[Added Associations]
+image/jpeg=sxiv.desktop;org.xfce.ristretto.desktop;
+image/png=sxiv.desktop;org.xfce.ristretto.desktop;
+text/plain=nvim.desktop;
+image/x-tga=org.xfce.ristretto.desktop;

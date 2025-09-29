@@ -1,8 +1,0 @@
-{
-    "editor.fontFamily": "GeistMono Nerd Font, 'monospace', monospace",
-   
-    "editor.renderWhitespace": "none",
-    "breadcrumbs.enabled": false,
-    "editor.renderControlCharacters": false,
-    "editor.fontLigatures": false
-}

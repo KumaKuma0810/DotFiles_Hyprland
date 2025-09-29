@@ -1,6 +1,0 @@
-2025-09-23 11:26:46.914 [info] Getting Manifest... ms-python.python
-2025-09-23 11:26:48.171 [info] Installing extension: ms-python.python {"productVersion":{"version":"1.103.25610","date":"2025-08-21T18:46:50.660Z"},"pinned":false,"operation":3,"isApplicationScoped":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/kuma/.vscode-oss/extensions/extensions.json","path":"/home/kuma/.vscode-oss/extensions/extensions.json","scheme":"vscode-userdata"}}
-2025-09-23 11:26:54.083 [info] Extracted extension to file:///home/kuma/.vscode-oss/extensions/ms-python.python-2025.14.0-universal: ms-python.python
-2025-09-23 11:26:54.216 [info] Renamed to /home/kuma/.vscode-oss/extensions/ms-python.python-2025.14.0-universal
-2025-09-23 11:26:54.255 [info] Marked extension as removed ms-python.python-2025.12.0-universal
-2025-09-23 11:26:54.260 [info] Extension installed successfully: ms-python.python vscode-userdata:/home/kuma/.vscode-oss/extensions/extensions.json

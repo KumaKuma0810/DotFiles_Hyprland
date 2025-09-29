@@ -1,8 +1,0 @@
-{
-    "editor.fontFamily": "JetBrainsMono Nerd Font Mono, 'Droid Sans Mono', 'monospace', monospace",
-    "workbench.colorTheme": "Owlet (Default)",
-    "editor.fontSize": 13,
-    "terminal.integrated.fontSize": 12,
-    "editor.stickyScroll.enabled": false,
-    "breadcrumbs.enabled": false
-}

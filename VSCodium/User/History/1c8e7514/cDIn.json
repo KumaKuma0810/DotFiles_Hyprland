@@ -1,8 +1,0 @@
-{
-    "editor.fontFamily": "Fira Code, 'Droid Sans Mono', 'monospace', monospace",
-    "workbench.colorTheme": "Owlet (Night Owl)",
-    "editor.fontSize": 13,
-    "terminal.integrated.fontSize": 12,
-    "editor.stickyScroll.enabled": false,
-    "breadcrumbs.enabled": false
-}

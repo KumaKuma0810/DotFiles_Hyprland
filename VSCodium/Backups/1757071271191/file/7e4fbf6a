@@ -1,4 +1,0 @@
-file:///home/kuma/pythonProjects/serializator.py {"mtime":1758811073901,"ctime":1758809253325,"size":77,"etag":"3erp0mpol2f","orphaned":false,"typeId":""}
-### Сериализаторы
-nums = [1, 2, 3, 4, 5, 5, 3]
-print(set(nums))

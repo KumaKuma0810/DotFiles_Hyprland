@@ -1,8 +1,8 @@
 
 * {
     all:unset;
-    font-family: 'Fira Code', monospace;
-    font-size: 16px;
+    font-family: 'GeistMono Nerd Font', monospace;
+    font-size: 14px;
     outline: none;
     border: none;
     text-shadow:none;
@@ -13,7 +13,7 @@ window {
     all:unset;
     padding: 20px;
     border-radius: 0px;
-    background-color: #100e03;
+    background-color: #1e1b39;
 }
 #inner-box {
     margin: 2px;
@@ -21,7 +21,7 @@ window {
     border: none;
 }
 #outer-box {    
-    border: 8px solid #615921;
+    border: 7px solid #61A2DB;
 }
 #scroll {
     margin: 0px;
@@ -53,7 +53,7 @@ window {
 #input:focus {
     outline: none;
     border: none;
-    background: #8A7748;
+    background: #d5cfdf;
     border-radius:5;
 }
 #text {
@@ -81,7 +81,7 @@ window {
 #entry:selected {
     border: none;
     border-radius: 5px;
-    background-color: #646155;
+    background-color: #61A2DB;
 }
 #entry:selected #text {
     color: #FFF;

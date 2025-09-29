@@ -29,29 +29,29 @@
                 "x": 0,
                 "y": 0,
                 "width": 480,
-                "height": 762
+                "height": 523
             }
         },
         "openedWindows": []
     },
     "theme": "vs-dark",
-    "themeBackground": "#100e03",
+    "themeBackground": "#011627",
     "windowSplash": {
         "zoomLevel": 0,
         "baseTheme": "vs-dark",
         "colorInfo": {
             "foreground": "#d6deeb",
-            "background": "#100e03",
-            "editorBackground": "#100e03",
-            "titleBarBackground": "#100e03",
+            "background": "#011627",
+            "editorBackground": "#011627",
+            "titleBarBackground": "#011627",
             "titleBarBorder": "rgba(255, 255, 255, 0.02)",
-            "activityBarBackground": "#100e03",
+            "activityBarBackground": "#011627",
             "activityBarBorder": "rgba(255, 255, 255, 0.07)",
-            "sideBarBackground": "#100e03",
+            "sideBarBackground": "#011627",
             "sideBarBorder": "rgba(255, 255, 255, 0.07)",
-            "statusBarBackground": "#100e03",
+            "statusBarBackground": "#011627",
             "statusBarBorder": "rgba(255, 255, 255, 0.02)",
-            "statusBarNoFolderBackground": "#100e03"
+            "statusBarNoFolderBackground": "#011627"
         },
         "layoutInfo": {
             "sideBarSide": "left",

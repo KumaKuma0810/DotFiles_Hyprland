@@ -2,7 +2,7 @@
 -- Минималистичный Neovim с LSP и автокомплит
 -- =========================================
 -- Enhanced custom colorscheme with more diverse text colors
-vim.opt.background = 'dark'
+-- vim.opt.background = 'dark'
 vim.opt.termguicolors = true
 
 -- Enable filetype detection and plugins
@@ -10,12 +10,6 @@ vim.cmd('filetype plugin indent on')
 
 -- Set termguicolors
 vim.opt.termguicolors = true
--- Прозрачный фон
-vim.cmd [[
-hi Normal guibg=NONE ctermbg=NONE
-hi NormalFloat guibg=NONE ctermbg=NONE
-]]
-
 -- ================================
 -- 1. Базовые настройки
 -- ================================
@@ -46,6 +40,21 @@ if not vim.loop.fs_stat(lazypath) then
 		lazypath,
 	})
 end
+-- Прозрачный фон для Neovim
+vim.cmd [[
+  hi Normal guibg=NONE ctermbg=NONE
+  hi NormalNC guibg=NONE ctermbg=NONE
+  hi NormalFloat guibg=NONE ctermbg=NONE
+  hi SignColumn guibg=NONE ctermbg=NONE
+  hi LineNr guibg=NONE ctermbg=NONE
+  hi Folded guibg=NONE ctermbg=NONE
+  hi NonText guibg=NONE ctermbg=NONE
+  hi SpecialKey guibg=NONE ctermbg=NONE
+  hi VertSplit guibg=NONE ctermbg=NONE
+  hi StatusLine guibg=NONE ctermbg=NONE
+  hi TabLineFill guibg=NONE ctermbg=NONE
+]]
+
 vim.opt.rtp:prepend(lazypath)
 
 -- ================================
@@ -72,35 +81,14 @@ require("lazy").setup({
 			vim.keymap.set("t", "<Esc>", [[<C-\><C-n>]], { noremap = true, silent = true })
 		end,
 	},
+
     {
-        "sainnhe/everforest",
+        "goolord/alpha-nvim",
+        dependencies = { "nvim-tree/nvim-web-devicons" },
         config = function()
-        -- Настройки темы
-        vim.g.everforest_background = "hard"        -- hard, medium, soft
-        vim.g.everforest_transparent_background = 1
-        vim.g.everforest_better_performance = 1
-        -- Подключаем тему
-        vim.cmd([[colorscheme everforest]])
-        end,
-  },
-
-	-- Mason
-	{
-		"williamboman/mason.nvim",
-		config = function() require("mason").setup() end
-	},
-
-	-- Mason + LSP
-	{
-		"williamboman/mason-lspconfig.nvim",
-		dependencies = "williamboman/mason.nvim",
-		config = function()
-			require("mason-lspconfig").setup {
-				ensure_installed = { "pylsp", "clangd", "gopls", "lua_ls" }
-			}
-		end
-	},
-
+          require'alpha'.setup(require'alpha.themes.dashboard'.config)
+        end
+    },
 	-- LSP
 	{ "neovim/nvim-lspconfig" },
 
@@ -256,4 +244,51 @@ vim.lsp.config("pylsp", {
 
 -- Включаем сервер
 vim.lsp.enable({ "pylsp", "clangd", "gopls", "lua_ls" })
+-- Проверяем, установлен ли alpha
+local ok, alpha = pcall(require, "alpha")
+if not ok then
+  return
+end
+
+local dashboard = require("alpha.themes.dashboard")
+
+-- ASCII баннер
+dashboard.section.header.val = {
+"⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀",
+"⠀⠀⢆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡰⠀⠀",
+"⠀⠀⠘⢷⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⡾⠃⠀⠀",
+"⠀⠀⠀⠈⠻⣷⣤⡀⠀⠀⠀⠀⠀⠀⣀⣀⠀⠀⠀⠀⠀⠀⢀⣤⣾⠟⠁⠀⠀⠀",
+"⠀⠀⠀⠀⠀⠈⠛⢿⣿⣶⣦⠈⣿⡟⢻⡟⢻⣿⠁⣴⣶⣿⡿⠛⠁⠀⠀⠀⠀⠀",
+"⠀⠀⠀⠀⠀⠀⠀⠀⣉⠛⠋⣠⡿⢀⣾⣷⡀⢿⣄⠙⠛⣉⠀⠀⠀⠀⠀⠀⠀⠀",
+"⠀⠀⠀⠀⠀⣴⣄⠀⣿⡉⢉⣉⣤⣾⣿⣿⣷⣤⣉⡉⢉⣿⠀⣠⣦⠀⠀⠀⠀⠀",
+"⠀⠀⠀⠀⠀⢻⣿⠀⣿⣿⣿⣿⣿⣿⡿⢿⣿⣿⣿⣿⣿⣿⠀⣿⡟⠀⠀⠀⠀⠀",
+"⠀⠀⠀⠀⠀⠀⢹⡀⢹⣧⠈⠉⠛⠋⢁⡈⠙⠛⠉⠁⣼⡏⢀⡏⠀⠀⠀⠀⠀⠀",
+"⠀⠀⠀⠀⠀⠀⠀⣧⠈⣿⣦⣀⡀⠄⢸⡇⠠⢀⣀⣴⣿⠁⣼⠀⠀⠀⠀⠀⠀⠀",
+"⠀⠀⠀⠀⠀⠀⠀⠈⠀⠸⠿⣏⠀⢤⣾⣷⡤⠀⣹⠿⠇⠀⠁⠀⠀⠀⠀⠀⠀⠀",
+"⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠀⡤⠀⣀⣉⣉⣀⠀⢤⠀⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀",
+"⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢀⡀⠀⡀⢀⠀⢀⡀⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀",
+"⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠱⢶⣶⣶⡶⠞⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀",
+"",
+"",
+}
+
+-- Кнопки
+dashboard.section.buttons.val = {
+  dashboard.button("e", "  New File", ":ene <BAR> startinsert<CR>"),
+  dashboard.button("f", "  Find File", ":Telescope find_files<CR>"),
+  dashboard.button("r", "  Recent Files", ":Telescope oldfiles<CR>"),
+  dashboard.button("p", "  Projects", ":Telescope projects<CR>"),
+  dashboard.button("q", "󰩈  Quit", ":qa<CR>"),
+}
+
+-- Футер
+-- dashboard.section.footer.val = "💻 Code. 🎶 Music. ☕ Coffee."
+
+-- Цвета (группы хайлайта)
+dashboard.section.header.opts.hl = "Type"
+dashboard.section.buttons.opts.hl = "Keyword"
+dashboard.section.footer.opts.hl = "Comment"
+
+-- Запускаем
+alpha.setup(dashboard.config)
 

@@ -1,0 +1,14 @@
+2025-09-26 17:09:58.622 [info] Extension host with pid 1303900 started
+2025-09-26 17:09:59.183 [info] ExtensionService#_doActivateExtension ms-python.python, startup: false, activationEvent: 'onLanguage:python', root cause: ms-python.debugpy
+2025-09-26 17:09:59.741 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2025-09-26 17:09:59.866 [info] ExtensionService#_doActivateExtension vscode.terminal-suggest, startup: false, activationEvent: 'onTerminalShellIntegration:*'
+2025-09-26 17:10:00.011 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2025-09-26 17:10:00.162 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2025-09-26 17:10:00.316 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2025-09-26 17:10:00.527 [info] Eager extensions activated
+2025-09-26 17:10:00.531 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2025-09-26 17:10:00.535 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2025-09-26 17:10:00.585 [info] ExtensionService#_doActivateExtension sainnhe.everforest, startup: false, activationEvent: 'onStartupFinished'
+2025-09-26 17:10:00.708 [info] ExtensionService#_doActivateExtension ms-python.debugpy, startup: false, activationEvent: 'onLanguage:python'
+2025-09-29 13:02:00.733 [info] Extension host terminating: renderer closed the MessagePort
+2025-09-29 13:02:00.750 [info] Extension host with pid 1303900 exiting with code 0

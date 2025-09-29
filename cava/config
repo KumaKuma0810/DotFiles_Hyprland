@@ -9,15 +9,18 @@ method = ncurses
 # или 'raw'/'noncurses' если используешь polybar/waybar
 
 [color]
-# Используем твою палитру
-foreground = '#d7d7d6'
+# foreground = текст в ncurses-режиме
+foreground = '#d5cfdf'
 
-# Цвета для спектра (можно указать один или несколько — они будут переливаться)
+# Градиент из твоей новой палитры
 gradient = 1
-gradient_color_1 = '#615921'
-gradient_color_2 = '#8A7748'
-gradient_color_3 = '#B2B3B0'
-gradient_color_4 = '#d7d7d6'
+gradient_color_1 = '#5A84BD'
+gradient_color_2 = '#3A8ED0'
+gradient_color_3 = '#399DE2'
+gradient_color_4 = '#4896D4'
+gradient_color_5 = '#61A2DB'
+gradient_color_6 = '#A0ACD6'
+gradient_color_7 = '#d5cfdf'
 
 [smoothing]
 monstercat = 1
